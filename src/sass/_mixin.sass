@@ -1,0 +1,98 @@
+@charset "utf-8"
+$xs: 320px
+$sm: 576px
+$md: 768px
+$lg: 992px
+$xl: 1200px
+$xxl: 1400px
+$full-hd: 1920px
+$four-k: 3840px
+
+@mixin xs
+  @media (max-width: $xs)
+    @content
+
+@mixin sm
+  @media (max-width: $sm)
+    @content
+
+@mixin md
+  @media (max-width: $md)
+    @content
+
+@mixin lg
+  @media (max-width: $lg)
+    @content
+
+@mixin xl
+  @media (max-width: $xl)
+    @content
+
+@mixin xxl
+  @media (max-width: $xxl)
+    @content
+
+@mixin full-hd
+  @media (max-width: $full-hd)
+    @content
+
+@mixin four-k
+  @media (max-width: $four-k)
+    @content
+
+@mixin four-k-plus
+  @media (min-width: $four-k)
+    @content
+
+@mixin for-landscape
+  @media (min-width: landscape)
+    @content
+
+@mixin for-portrait
+  @media (min-width: portrait)
+    @content
+
+  
+  
+@mixin size($wi, $he)
+  width: #{$wi}px
+  height: #{$he}px
+
+@mixin position($t,$l)
+  top: #{$t}px
+  left: #{$l}px
+
+@mixin animation($s)
+  -webkit-animation: $s
+  -moz-animation: $s
+  -ms-animation: $s
+  -o-animation: $s
+  animation: $s
+
+@mixin transform($type)
+  -webkit-transform: $type
+  -moz-transform: $type
+  -ms-transform: $type
+  -o-transform: $type
+  transform: $type
+
+@mixin transition($prop,$time)
+  -webkit-transition: $prop $time ease-in-out
+  -moz-transition: $prop $time ease-in-out
+  -ms-transition: $prop $time ease-in-out
+  -o-transition: $prop $time ease-in-out
+  transition: $prop $time ease-in-out
+
+@mixin transition2($prop,$time,$effect)
+  -webkit-transition: $prop $time $effect
+  -moz-transition: $prop $time $effect
+  -ms-transition: $prop $time $effect
+  -o-transition: $prop $time $effect
+  transition: $prop $time $effect
+
+=webfont($font)
+  @font-face
+    font-weight: normal
+    font-sytle: normal
+    font-family: '#{$font}'
+    src: url('../fonts/#{$font}.ttf') format('truetype'), url('../fonts/#{$font}.svg##{$font}') format('svg'), url("../font/#{$font}.woff") format("woff"), url("../font/#{$font}.woff2") format("woff2"), url("../font/#{$font}.otf") format("opentype")

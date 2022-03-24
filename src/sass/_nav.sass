@@ -1,0 +1,75 @@
+
+header
+    nav
+        a
+            font-family: $font-destaque
+            .badge
+                font-size: 0.7rem
+                top: -10px
+            
+            #logo
+                margin-left: 0
+
+                @include md
+                    margin-left: 18rem
+
+                @include sm
+                    margin-left: 7.3rem
+
+                @include xs
+                    margin-left: 3.8rem
+
+        .navbar-brand
+            max-width: 175px  
+
+        .nav-link
+            color: white  
+
+        .nav-link:hover
+            color: rgba(255,255,255,1)
+            text-shadow: rgba(0,0,0,0.5) 0px 0px 5px, #FFF 0px 0px 15px, #FFF 0px 0px 30px
+            opacity: 1
+            .badge
+                text-shadow: #FFF 0px 0px 10px, #FFF 0px 0px 15px
+            img
+                +transform(rotate(0deg))
+        
+        .dropdown-toggle
+            img
+                position: absolute
+                height: 1.2rem
+                transform: rotate(90deg)
+                margin: 0.1rem 0.6rem
+                
+            &::after
+                display: none
+                background-color: black!important
+            &.show
+                img
+                    +transform(rotate(270deg))
+
+        .active
+            color: rgba(255,255,255,0.75)
+            opacity: 1
+            text-shadow: rgba(0,0,0,0.5) 0px 0px 5px, #FFF 0px 0px 15px, #FFF 0px 0px 30px
+
+        .nav-item 
+            .dropdown-menu
+                background-color: #1f1f1f
+
+                @include lg 
+                    position: absolute
+
+                a:hover
+                    background-color: black
+
+                .dropdown-item
+                    color: white  
+
+        #torneios 
+            display: none
+            // @include lg 
+            //     padding-left: 4rem 
+
+        #loja
+            display: none        

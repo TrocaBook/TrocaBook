@@ -1,0 +1,95 @@
+#footer
+    position: relative
+    background-image: url("../img/common/big-bg3x.jpg")
+
+    .row
+        display: flex
+        align-items: center
+        justify-content: center
+        padding-left: 2rem
+
+        @include md
+          padding-left: 8rem
+
+        @include sm
+          padding-left: 0
+
+        #first
+          @include sm
+            grid-gap: 0   
+
+        #second
+          @include xl
+            padding-left: 1rem   
+                       
+          @include sm
+            text-align: center  
+
+          @include xs
+            text-align: center              
+
+        .links-footer
+            display: flex
+            flex-direction: row
+            align-items: center
+            grid-gap: 1.5rem
+            font-family: $font-destaque
+            font-weight: 600
+            color: white
+            padding: 0
+
+            @include xl
+              grid-gap: 0.8rem
+
+            @include xs
+              grid-gap: 0
+
+            img
+              @include xl
+                width: 80%
+
+            #cta
+              font-family: $font-destaque !important
+              font-weight: 400 !important
+
+              @include xl
+                font-size: 0.8rem
+              
+              @include md
+                font-size: 1rem
+
+              @include sm
+                font-size: 0.8rem
+
+            .redes-sociais
+                display: flex
+                flex-direction: row
+                padding-left: 0.1rem
+                grid-gap: 1rem
+
+                @include xl
+                  grid-gap: 0.5rem
+
+
+                img
+                  @include sm
+                    width: 90%
+                    padding-left: 0.1rem
+            
+            a
+              font-family: $font-destaque
+              font-weight: 400
+              text-decoration: none
+              color: white
+
+              @include xl
+                font-size: 0.8rem
+              
+              @include md
+                font-size: 1rem
+
+              @include sm
+                font-size: 0.8rem
+
+              @include xs
+                font-size: 0.7rem
