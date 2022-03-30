@@ -2,6 +2,53 @@ main
     overflow: hidden
     background-image: url("../img/common/big-bg3x.jpg")
     #welcome
-       #welcome-img-area
-           .welcome-img
-               height: auto 
+        height: 600px
+        #welcome-img-area
+            @include sm
+                opacity: 0
+            .welcome-img
+               height: 100% 
+        #welcome-text-area
+            @include sm
+                padding-top: 0rem
+                padding: 2rem
+                margin-top: -100%
+    #sectors
+        padding-top: 11%
+        .area-text-sectors
+            padding: 7%
+        .area-title-sectors
+            padding-top: 7% 
+        .icone-img
+            padding-top: 20%
+            margin: auto
+            width: 18%
+            height: auto
+        #sectors-equipment
+            background-color: #45c7cf
+            height: 545px
+        #sectors-ready
+            background-color: #34b8c0
+            height: 525px
+        #sectors-doctors
+            background-color: #886bdf
+            height: 565px
+        #sectors-success
+            background-color: #6f51c7
+            height: 545px
+    #dangers
+        height: 600px
+        margin-top: 10%
+        #dangers-img-area
+            @include sm
+                opacity: 0
+            .dangers-img
+               height: 100%
+    #patients
+        height: 600px
+        margin-top: 10% 
+        .patients-img
+            height: 100% 
+            background-size: cover
+
+                
