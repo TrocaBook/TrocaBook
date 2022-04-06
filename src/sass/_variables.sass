@@ -34,6 +34,11 @@ $font-destaque: Poppins, sans-serif
 .font-default
   font-family: $font-destaque
 
+.font-menu
+  font-family: Poppins, sans-serif
+  font-style: normal
+  font-weight: 450
+
 .weight-bold
   font-weight: 900
 
@@ -55,6 +60,10 @@ $font-destaque: Poppins, sans-serif
 .font-banner
   font-size: 55px
 
+.icon
+  width: auto
+  height: 45px
+
 .margin-btn-banner1
   margin-left: 7%
 
@@ -63,9 +72,36 @@ $font-destaque: Poppins, sans-serif
   line-height: 2rem
   font-size: 20px
   margin-top: 2%
+  padding-left: 5%
+  padding-right: 5%
+  text-align: justify
+  @include lg
+    font-size: 20px
+
+.font-footer
+  color: #817e7e
+  line-height: 2rem
+  font-size: 20px
+  margin-top: 2%
+  @include lg
+    font-size: 20px
+
+.text-new
+  color: #817e7e
+  line-height: 2rem
+  font-size: 20px
+  margin-top: 45%
+  @include lg
+    margin-top: 5%
+  @include sm
+    margin-top: 67%
 
 .font-title
+  padding-left: 5%
+  padding-right: 5%
   font-size: 45px
+  @include lg
+    font-size: 35px
   @include sm
     font-size: 25px
 
@@ -73,6 +109,9 @@ $font-destaque: Poppins, sans-serif
   color: #ffffff
   line-height: 2rem
   font-size: 20px
+  @include sm
+    font-size: 16px
+    line-height: 1.5rem
 
 .font-title-white
   font-size: 30px
@@ -84,10 +123,21 @@ $font-destaque: Poppins, sans-serif
   font-size: 40px
   font-weight: 540
   color: #ffffff
+  @include lg
+    font-size: 30px
 
 .font-text-superior
   position: relative
   font-size: 25px
   color: #ffffff
+  @include lg
+    font-size: 18px
 
+.icon
+  width: 30px
+  height: 30px
 
+.icon-menu
+  width: 45px
+  height: 50px
+  margin-left: 1rem

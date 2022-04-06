@@ -117,12 +117,29 @@ b
   border-radius: 58px
   padding-left: 35px
   padding-right: 35px
+  margin-left: 5%
   height: 50px
   border: none
   outline: none
   color: $white-bg-color
   &:hover, .active
     background-color: black
+    background-image: none
+    color: $white-bg-color
+
+.btn-nav
+  background-color: $color-destaque
+  border-radius: 58px
+  padding-left: 28px
+  padding-right: 28px
+  height: 37px
+  font-size: 15px
+  font-weight: 500
+  border: none
+  outline: none
+  color: white
+  &:hover, .active
+    background-color: black 
     background-image: none
     color: $white-bg-color
 
@@ -163,7 +180,19 @@ b
   border: none
   outline: none
   color: $color-destaque
-  font-size: 32px
+  font-size: 28px
+  &:hover, .active
+    background-color: transparent
+    background-image: none
+    color: #181717
+
+.btn-footer
+  background-color: transparent
+  border-radius: 58px
+  border: none
+  outline: none
+  color: $color-destaque
+  font-size: 16px
   &:hover, .active
     background-color: transparent
     background-image: none
@@ -172,10 +201,11 @@ b
 .btn-news
   background-color: transparent
   border-radius: 58px
-  margin-left: -3%
-  height: 45px
+  margin-left: 0%
+  height: 35px
   border: none
   outline: none
+  text-align: center
   color: $color-destaque
   font-size: 32px
   &:hover, .active
@@ -187,6 +217,9 @@ b
   padding: 5rem
   padding-top: 8rem
   justify-content: center
+  @include lg
+    padding: 2rem
+    padding-top: 4.5rem
 
 .area-text
   padding-top: 5%
