@@ -12,7 +12,56 @@
     padding-left: 45%
     padding-right: 50%
     @include lg
-      padding-left: 35%
+      padding-left: 40%
+
+  .text-first-part
+    margin-top: 1rem
+    @include lg
+      margin-left: 0rem
+    .icon-info
+      width: 48px
+      height: 25px
+      margin-top: -0.1rem
+      margin-left: 1rem
+      @include sm
+        margin-left: 0rem
+        margin-top: 0rem
+    #icon-telefone
+      @include lg
+        margin-left: 40%
+      @include sm
+        margin-left: 28%
+      @media (min-width: 415px) and (max-width: 560px) and 
+        margin-left: 35%
+      @media (max-width: 280px)
+        margin-left: 23%
+    #icon-localizacao
+      @include lg
+        margin-left: 30%
+      @include sm
+        margin-left: 8%
+      @media (min-width: 415px) and (max-width: 560px)
+        margin-left: 20%
+    .text_info
+      font-size: 1rem
+      color: #949393
+      margin-left: -1rem
+      @media (min-width: 993px) and (max-width: 1270px)
+        margin-left: 4rem
+        margin-top: -3%
+      @include lg
+        margin-left: 1.5rem
+        text-align: center
+        margin-top: -25px
+      @include sm
+        padding: 5px
+      @media (max-width: 280px)
+        padding-left: 10%
+        padding-right: 10%
+  .logo-footer
+    margin-left: 13rem
+    @include lg
+      margin-left: 0rem
 
 
     
