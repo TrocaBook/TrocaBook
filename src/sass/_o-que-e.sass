@@ -8,8 +8,18 @@
         #heal-oque-img-area
             .heal-oque-img
                 margin-top: 45%
+                margin-left: 10%
                 width: 100%
                 height: auto
+                @include lg
+                    margin-top: -10%
+                    margin-left: 0%
+                @media (width: 1024px)
+                    margin-left: 15%
+                    margin-top: 0%
+                    width: 70%
+                @media (width: 540px)
+                    margin-top: 25%
         #heal-oque-img-area2
             @include lg
                 opacity: 1
@@ -49,9 +59,12 @@
             @include lg
                 height: auto
                 margin-top: 1rem
+            @media (width: 280px)
+                margin-left: 5%
             @media (width: 1024px)
                 width: 50%
                 margin-top: 1rem
+
             .health-icon
                 padding-top: 10%
                 margin: auto
