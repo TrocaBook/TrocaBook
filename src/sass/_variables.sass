@@ -35,9 +35,8 @@ $font-destaque: "Gotham", Sans-serif
   font-family: $font-destaque
 
 .font-menu
-  font-family: "Gotham", Sans-serif
-  font-style: normal
-  font-weight: 450
+  font-family: "Gotham Rounded"
+  font-weight: 600
 
 .weight-bold
   font-weight: 700
@@ -55,11 +54,14 @@ $font-destaque: "Gotham", Sans-serif
   font-weight: 700
 
 .font-destaque-banner
-  font-size: 64px
+  font-size: 50px
+  @include sm
+    opacity: 0
 
 .font-banner
-  font-size: 55px
-
+  font-size: 40px
+  @include sm
+    opacity: 0
 .icon
   width: auto
   height: 45px
@@ -75,9 +77,15 @@ $font-destaque: "Gotham", Sans-serif
   margin-top: 2%
   padding-left: 10%
   padding-right: 10%
-  text-align: justify
+  text-align: left
   @include lg
     font-size: 22px
+    padding-left: 0%
+    padding-right: 0%
+    margin-top: 5%
+  @include sm
+    padding-left: 5%
+    padding-right: 5%
 
 .font-text
   color: #817e7e
@@ -86,7 +94,7 @@ $font-destaque: "Gotham", Sans-serif
   margin-top: 2%
   padding-left: 5%
   padding-right: 5%
-  text-align: justify
+  text-align: left
   @include lg
     font-size: 22px
 
@@ -122,9 +130,16 @@ $font-destaque: "Gotham", Sans-serif
 .font-text-white
   color: #ffffff
   line-height: 2rem
+  font-size: 25px
+  @include sm
+    font-size: 20px
+    line-height: 1.5rem
+
+.font-text-sectors
+  color: #ffffff
+  line-height: 2rem
   font-size: 20px
   @include sm
-    font-size: 16px
     line-height: 1.5rem
 
 .font-title-white
@@ -155,3 +170,9 @@ $font-destaque: "Gotham", Sans-serif
   width: 45px
   height: 50px
   margin-left: 1rem
+
+.color-secundary
+  color: $color-secundary
+
+.color-tradicional
+  color: #525050

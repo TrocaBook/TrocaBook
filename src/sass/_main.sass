@@ -31,7 +31,7 @@ main
         .icone-img
             padding-top: 20%
             margin: auto
-            width: 18%
+            width: 25%
             height: auto
         #sectors-equipment
             background-color: #45c7cf
@@ -64,7 +64,7 @@ main
                     width: 100%
                     height: 100%
     #patients
-        height: 600px
+        height: 475px
         @include lg
             height: 690px
         @include sm
@@ -74,14 +74,13 @@ main
             height: 1000px 
             background-size: cover
         .title-superior
-            top: 10%
+            top: 5%
             display: flex
             justify-content: center
             align-items: center
             flex: 1
             width: 100%
-            @include lg
-                top: 5%
+            
         .text-superior
             top: 10%
             display: flex
@@ -106,30 +105,45 @@ main
                 width: 145px
                 height: 145px
                 margin-left: 0%
-                margin-top: 25%
+                margin-top: -10%
                 @include lg
                     margin-left: 105%
-                    margin-top: 40%
+                    margin-top: -30%
                     height: 120px
                 @include sm
                     margin-left: 130%
-                    margin-top: 70%
+                    margin-top: -30%
                     height: 110px
+                @media (max-width: 280px)
+                    margin-top: -30%
+                    height: 90px
+                @media (width: 1024px)
+                    margin-left: 150px
+                    margin-top: -50%
+            #patient-2
+                @include sm
+                    margin-top: 70%
         #segundo-comentario
             @include sm
                 margin-top: -25%
         .text-comment
             padding: 2%
-            text-align: justify
+            text-align: left
             margin-left: -5%
+            margin-top: -15%
+            @include lg
+                margin-top: 10%
+                margin-left: 5px
             @include sm
                 margin-top: 1rem
                 margin-left: 0%
+            @media (width: 1024px)
+                margin-left: 10px
             .space
                 padding: 5% 
             .patients-icone-comment
                 @include lg
-                    margin-left: 45%
+                    margin-left: 0%
     #forms
         height: auto
         @include lg

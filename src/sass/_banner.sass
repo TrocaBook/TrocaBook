@@ -23,16 +23,22 @@
                 position: absolute
                 right: 15%
                 bottom: 1.25rem
-                left: -20%
+                left: 0%
                 padding-top: 1.25rem
                 padding-bottom: 1.25rem
+                @include lg
+                    left: 0%
+                    top: 22%
+                @include sm
+                    top: 0%
+                    left: 8%
             .carousel-caption-2
                 position: absolute
                 right: 15%
                 bottom: 1.25rem
                 padding-top: 1.25rem
                 padding-bottom: 1rem
-                left: 45%
+                left: 20%
             .carousel-caption-3
                 position: absolute
                 right: 15%
@@ -52,8 +58,8 @@
             opacity: 1
             .bg-icon
                 display: inline-block
-                width: 4rem
-                height: 4rem
+                width: 3rem
+                height: 3rem
                 background-repeat: no-repeat
                 background-position: 100%
                 background-size: 100% 40%
@@ -61,5 +67,8 @@
                 border-radius: 100%
                 color: white
                 font-weight: 500
+                @include sm
+                    width: 2.5rem
+                    height: 2.5rem
                 
                 

@@ -1,6 +1,8 @@
 
 header
     nav
+        .navbar-toggler:focus
+            box-shadow: none !important
         #second-part
             width: 100%
             margin-left: -2%
@@ -13,26 +15,16 @@ header
                 padding-left: 5%
         a
             margin-top: 0.8rem
-        .navbar-collapse
+        .text-menu
+            color: #666666
             @include lg
-                margin-top: 5rem
-            #btn-desktop
-                opacity: 1
-                @include lg
-                    opacity: 0
-        .navbar-toggler
+                margin-left: -75%
+                margin-top: -3.2rem
             @include sm
-                margin-top: 4rem
-            .text-menu
-                color: #666666
-                @include lg
-                    margin-left: -75%
-                    margin-top: -3.2rem
-                @include sm
-                    margin-left: -43%
-                    margin-top: -3.2rem
-                @media (max-width: 280px)
-                    margin-left: -32%
+                margin-left: -43%
+                margin-top: -3.2rem
+            @media (max-width: 280px)
+                margin-left: -32%
         #btn-mobile
             opacity: 0
             width: 0
@@ -64,8 +56,8 @@ header
             #logo
                 margin-left: 0rem
 
-                @include md
-                    margin-left: 1rem
+                @include lg
+                    margin-left: 5rem
 
                 @include sm
                     margin-left: 0.5rem
@@ -82,7 +74,7 @@ header
                 max-width: 547px
 
         .nav-link
-            color: black 
+            color: rgb(129, 126, 126) 
 
         .nav-link:hover
             color: $color-secundary
