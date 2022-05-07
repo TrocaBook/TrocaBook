@@ -16,4 +16,4 @@ Tmos como objetivo principal reformular a ideia generalizada, maioritariamente n
 Através da nossa plataforma, almeja-se aumentar o interesse literário sob os cidadãos, promovendo o compartilhamento e indicações de livros, que irão proporcionar ao usuários novas experiências literárias.
 
 #### Derick Pina para a Pesquisa do SpaceCode
-> "[...]O efeito bola de neve faz com que a distância das pessoas e dos livros\\ se torne cada vez maior. Até que ponto isso pode ser levado como algo "natural" tendo em vista o sentido de evolução? Ou há um pensamento unânime de que deixar de ler é como negar nossas raízes e desconhecer grande parte da nossa história?"
+> "[...]O efeito bola de neve faz com que a distância das pessoas e dos livros se torne cada vez maior. Até que ponto isso pode ser levado como algo "natural" tendo em vista o sentido de evolução? Ou há um pensamento unânime de que deixar de ler é como negar nossas raízes e desconhecer grande parte da nossa história?"
