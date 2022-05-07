@@ -6,11 +6,11 @@ A atual conjuntura do fácil acesso à informação, com a internet e suas redes
 
 Nossa missão, é despertar um maior interesse em nossos usuários, levando-os a conhecer mais sobre a literatura, ao introduzirmos nossa plataforma TrocaBook, que será uma rede de compartilhamento literário, onde os utilizadores poderão compartilhar e comentar sobre suas leituras, avaliando-as e realizando postagens sobre suas experiências.
 
-##Objetivos
+#Objetivos
 O objetivo desse projeto é conectar os cidadão com o mundo literário, utilizando o TrocaBook, cuja utilidade é expandir o interesse pela leitura, com compartilhamento e indicações, despertando interesses e tendo como propósito de culturizar-los.
 
-###Objetivo Principal
+#Objetivo Principal
 Tmos como objetivo principal reformular a ideia generalizada, maioritariamente nas gerações atuais, de que a leitura se trata de "algo ultrapassado". Procuraremos expandir  exponencialmente o interesse social pela literatura, oferecendo o compartilhamento e as indicações literárias de forma inovadora e descontraída, buscando a expansão de nichos bibliográficos e a aquisição de maior disposição na participação coletiva entre nossos usuários.
 
-###Objetivos Específicos
+#Objetivos Específicos
 Através da nossa plataforma, almeja-se aumentar o interesse literário sob os cidadãos, promovendo o compartilhamento e indicações de livros, que irão proporcionar ao usuários novas experiências literárias.
