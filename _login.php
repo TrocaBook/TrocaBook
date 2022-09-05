@@ -1,3 +1,4 @@
+<?php session_start(); $_SESSION['msg'] = '';?>
 <!DOCTYPE html>
 <html lang="pt_BR">
 
@@ -26,86 +27,49 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 
-<body class="d-flex flex-column h-100 bg-white">
-    <header id="header" class="shadow z-index-2">
 
-    </header>
-    <main id="home" class="main flex-shrink-0 pb-5">
-        <section id="postar" class="row position-relative z-index-1 col-12 pt-5 pt-md-0">
-            <div id="container-postar" class="row col-12 col-md-4 px-0 mt-0 pt-5 pt-md-0">
-                <div class="col-12">
-                    <h4 class="px-3 py-3">Chats</h4>
-                    <div class="col-12 row py-3">
-                        <div class="col-3">
-                            <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
-                        </div>
-                        <div class="col-9 py-3 px-3">
-                            <h6>Julia Andrade</h6>
-                        </div>
+<body class="d-flex flex-column h-100 bg_login">
+    <main id="home" class="main flex-shrink-0">
+        <section id="login" class="position-relative z-index-1 col-12">
+            <div class="container-LoginCentral col-10 m-auto">
+                <div class="row area-login">
+                    <div id="login-img-area" class="border-radius bg-white position-relative col-md-6">
+                        <img class="d-block login-img" src="assets/img/login/login.jpg" alt="background">
                     </div>
-                    <div class="col-12 row py-3">
-                        <div class="col-3">
-                            <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
+                    <div class="border-radius position-relative col-md-6 px-0 px-md-4 px-md-0 ps-md-5 pt-0 pt-md-5 bg_loginInterior">
+                        <div>
+                            <div class="text-center text-black pt-0 pt-md-3 mt-5">
+                                <h2><b>Olá, caro leitor.</b></h2>
+                                <h2>Sentimos sua falta!</h2>
+                            </div>
+                            <form class="form mb-md-0 mb-5" method="POST" action="./controller/_loginController.php">
+
+                                <label class="label-input" for="">
+                                    <i class="far fa-envelope icon-modify"></i>
+                                    <input type="email" placeholder="E-mail" id="email" name="email" required>
+                                </label>
+                                <label class="label-input" for="">
+                                    <i class="fas fa-unlock-alt icon-modify"></i>
+                                    <input type="password" placeholder="Senha" id="senha" name="senha" required>
+                                </label>
+                                <?php echo $_SESSION['msg']; ?>
+                                <center>
+
+                                    <input class="btn-login" type="submit" name="cadUser">
+
+                                    <li><a id="cadastro" class="btn btn-second" href="_cadastro.php">Eu ainda não possuo um cadastro</a></li>
+
+                                </center>
+
+                                <br>
+                                <!-- <button id="cadastro" class="btn btn-second">sign up</button> -->
+                            </form>
                         </div>
-                        <div class="col-9 py-3 px-3">
-                            <h6>Julia Andrade</h6>
-                        </div>
-                    </div>
-                    <div class="col-12 row py-3">
-                        <div class="col-3">
-                            <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
-                        </div>
-                        <div class="col-9 py-3 px-3">
-                            <h6>Julia Andrade</h6>
-                        </div>
-                    </div>
-                    <div class="col-12 row py-3">
-                        <div class="col-3">
-                            <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
-                        </div>
-                        <div class="col-9 py-3 px-3">
-                            <h6>Julia Andrade</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row col-0 col-md-6 px-0 mt-0">
-                <div class="col-6 py-3 row">
-                    <div class="col-3">
-                        <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
-                    </div>
-                    <div class="col-9 py-3 px-4">
-                        <h6>Julia Andrade</h6>
-                    </div>
-                </div>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
-                <br><br>
-                <div id="chat-msg" class="col-12 row">
-                    <div class="col-3">
-                        <img class="usuario-post img-fluid d-block post-icon" src="assets/icons/usuario2.png">
-                    </div>
-                    <div class="col-9">
-                        <textarea class="btn-form" id="text25" placeholder="Digite uma mensagem"></textarea>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
     </main>
-
-    <footer id="footer">
-        <div class="container">
-        </div>
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6500806379.js" crossorigin="anonymous"></script>
     <script id="dist" src="assets/js/dist.min.js"></script>
